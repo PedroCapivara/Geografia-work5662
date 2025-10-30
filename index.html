@@ -1,0 +1,217 @@
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campos do Jordão — Guia Minimalista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green-900: #0f3828;
+      --green-800: #124C32;
+      --green-700: #1b6a47;
+      --white: #ffffff;
+      --muted: rgba(255,255,255,0.9);
+      --accent-gray: #8F908F;
+      --max-width: 1100px;
+      --gutter: 20px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial;background:var(--green-900);color:var(--white);-webkit-font-smoothing:antialiased;line-height:1.6;padding-top:80px}
+    .wrap{max-width:var(--max-width);margin:0 auto;padding:24px var(--gutter) 80px}
+    header{position:fixed;inset:0 0 auto 0;z-index:60;background:linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.12));backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.05)}
+    nav{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px var(--gutter)}
+    .brand{font-family:'Playfair Display',serif;font-size:20px}
+    .nav-links{display:flex;gap:14px}
+    .nav-links a{color:var(--white);text-decoration:none;padding:8px;border-radius:8px;font-weight:600}
+    .band{padding:34px 20px;margin-top:16px}
+    .band--dark{background:linear-gradient(90deg,var(--green-900), rgba(0,0,0,0.2));}
+    .band--mid{background:linear-gradient(90deg,var(--green-800), var(--green-700));}
+    .band-title{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:6px var(--gutter)}
+    .band-title h2{font-family:'Playfair Display',serif;margin:0;font-size:22px}
+    .band-title p{margin:0;color:var(--accent-gray);font-size:14px}
+    section.content{max-width:var(--max-width);margin:0 auto;padding:28px var(--gutter);background:transparent}
+    .intro{display:flex;gap:24px;align-items:flex-start}
+    .intro h1{font-family:'Playfair Display',serif;margin:0 0 8px 0;font-size:34px}
+    .intro p.lead{margin:0;color:var(--muted);max-width:70%}
+    p,li{color:var(--muted);font-size:15px}
+    ul{padding-left:18px}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px}
+    figure{margin:0;border-radius:8px;overflow:hidden;background:#000}
+    figure img{width:100%;height:220px;object-fit:cover;display:block}
+    figcaption{padding:10px;font-size:13px;color:var(--accent-gray)}
+    footer{padding:36px 12px;text-align:center;color:var(--accent-gray);font-size:14px}
+    @media (max-width:1000px){.intro p.lead{max-width:100%}figure img{height:160px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">Campos do Jordão</div>
+      <div class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#clima">Clima</a>
+        <a href="#natureza">Natureza</a>
+        <a href="#cultura">Cultura</a>
+        <a href="#gastronomia">Gastronomia</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#tecnicas">Imagens Técnicas</a>
+        <a href="#galeria">Galeria</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <div id="inicio" class="band band--dark">
+      <div class="band-title">
+        <h2>Guia - Campos do Jordão</h2>
+      </div>
+    </div>
+
+    <section class="content">
+      <div class="intro">
+        <div class="text">
+          <h1>Suíça Brasileira: clima de montanha e charme europeu</h1>
+          <p class="lead">Campos do Jordão, localizada na Serra da Mantiqueira (interior de São Paulo), é uma das cidades mais charmosas e visitadas do Brasil — conhecida como a “Suíça brasileira” por sua arquitetura europeia, clima de montanha e forte tradição cultural.</p>
+        </div>
+        <aside style="width:360px;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.35)">
+          <img src="assets/portal.jpg" alt="Portal de entrada — 1080x675" style="width:100%;height:240px;object-fit:cover;display:block" loading="lazy">
+        </aside>
+      </div>
+    </section>
+
+    <div id="clima" class="band band--mid">
+      <div class="band-title">
+        <h2>Clima</h2>
+        <p>Estações e características</p>
+      </div>
+    </div>
+
+    <section class="content" aria-labelledby="clima">
+      <p><strong>Verão:</strong> calor ameno do sol, não ultrapassa 30 graus, brisa suave e refrescante.</p>
+      <p><strong>Outono:</strong> árvores tem tons avermelhados, ventos frios, clima equilibrado.</p>
+      <p><strong>Inverno:</strong> temperaturas podem chegar a abaixo de 0, manhãs brancas da geada.</p>
+      <p><strong>Primavera:</strong> desabrochar das flores, cidade colorida por conta das árvores.</p>
+      <p style="margin-top:10px"><strong>Clima predominante:</strong> temperado de altitude ou subtropical de altitude.</p>
+    </section>
+
+    <div id="natureza" class="band band--dark">
+      <div class="band-title">
+        <h2>Natureza e Geografia</h2>
+        <p>Relevo, bacias e bioma</p>
+      </div>
+    </div>
+
+    <section class="content" aria-labelledby="natureza">
+      <p>Localizada nos Planaltos e Serras do Atlântico Leste-Sudeste é formada por relevo de altas declividades, com escarpas festonadas, cobertas por vegetação de transição entre mata atlântica e mata de araucárias.</p>
+      <p>A Bacia Hidrográfica da Serra da Mantiqueira possui uma área de aproximadamente 686 Km² e abrange as estâncias climáticas de Campos do Jordão, Santo Antônio do Pinhal e São Bento do Sapucaí. A região abriga importantes cursos d'agua e formações que compõem o bioma da mata Atlântica.</p>
+    </section>
+
+    <div id="cultura" class="band band--mid">
+      <div class="band-title">
+        <h2>Cultura e Arte</h2>
+        <p>Museus, auditórios e patrimônios</p>
+      </div>
+    </div>
+
+    <section class="content" aria-labelledby="cultura">
+      <ul>
+        <li><strong>Museu Felícia Leirner e Auditório Claudio Santoro</strong> — esculturas ao ar livre integradas à natureza e sede do Festival Internacional de Inverno de Campos do Jordão.</li>
+        <li><strong>Palácio Boa Vista</strong> — residência oficial de inverno do Governador de São Paulo, com acervo de artistas modernistas.</li>
+        <li><strong>Mosteiro de São João</strong> — mosteiro de monjas beneditinas, cercado de jardins e muita paz.</li>
+      </ul>
+    </section>
+
+    <div id="gastronomia" class="band band--dark">
+      <div class="band-title">
+        <h2>Gastronomia</h2>
+        <p>Sabores típicos</p>
+      </div>
+    </div>
+
+    <section class="content" aria-labelledby="gastronomia">
+      <p>Famosa por fondue, truta, chocolates artesanais e cervejas locais.</p>
+      <ul>
+        <li><strong>Baden Baden</strong> — cervejaria com tours guiados.</li>
+        <li><strong>Fábricas de chocolate</strong> — Montanhês, Araucária.</li>
+        <li><strong>Vila Capivari</strong> — cafés, lojas e fondue.</li>
+      </ul>
+    </section>
+
+    <div id="eventos" class="band band--mid">
+      <div class="band-title">
+        <h2>Eventos</h2>
+        <p>Datas e celebrações</p>
+      </div>
+    </div>
+
+    <section class="content" aria-labelledby="eventos">
+      <ul>
+        <li><strong>Festival de Inverno</strong> (junho/julho) — música clássica e apresentações.</li>
+        <li><strong>Natal dos Sonhos</strong> — decoração natalina e espetáculos luminosos.</li>
+        <li><strong>Festival da Cerveja</strong> — celebra as cervejas artesanais locais.</li>
+      </ul>
+    </section>
+
+    <div id="tecnicas" class="band band--dark">
+      <div class="band-title">
+        <h2>Imagens Técnicas</h2>
+        <p>Mapas e dados altimétricos com explicação</p>
+      </div>
+    </div>
+
+    <section class="content" aria-labelledby="tecnicas">
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start">
+        <div>
+          <h3 style="margin-top:0;color:var(--white)">Mapa da Bacia Hidrográfica</h3>
+          <p>Este mapa mostra os limites da Bacia Hidrográfica da Serra da Mantiqueira e a distribuição das sub‑bacias que incluem Campos do Jordão, Santo Antônio do Pinhal e São Bento do Sapucaí. Use-o para entender a relação entre os cursos d'água e as áreas urbanas.</p>
+          <p><strong>Observação técnica:</strong> a escala gráfica apresenta até 6 km; ao planejar trilhas ou estudos hidrológicos considere verificar o mapa em alta resolução.</p>
+        </div>
+        <div style="border-radius:8px;overflow:hidden;background:rgba(0,0,0,0.12);padding:6px">
+          <img src="assets/map_bacia.jpg" alt="Mapa da Bacia Hidrográfica — 1200x800" style="width:100%;height:260px;object-fit:cover;display:block" loading="lazy">
+        </div>
+      </div>
+
+      <div style="height:24px"></div>
+
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start">
+        <div>
+          <h3 style="margin-top:0;color:var(--white)">Mapa de Elevação (DEM)</h3>
+          <p>O mapa de elevação mostra as variações altimétricas na região de Campos do Jordão. As cores indicam baixos aos maiores valores de altitude (picos próximos a ~1.900 m).</p>
+          <p><strong>Nota técnica:</strong> consulte a fonte do DEM para precisão vertical (margem de erro).</p>
+        </div>
+        <div style="border-radius:8px;overflow:hidden;background:rgba(0,0,0,0.12);padding:6px">
+          <img src="assets/map_elevacao.jpg" alt="Mapa de Elevação — 1200x1600" style="width:100%;height:260px;object-fit:cover;display:block" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <div id="galeria" class="band band--mid">
+      <div class="band-title">
+        <h2>Galeria</h2>
+        <p>Imagens ilustrativas (ordem conforme sua visualização)</p>
+      </div>
+    </div>
+
+    <section class="content" aria-labelledby="galeria">
+      <p style="color:var(--accent-gray)">Ordem: 3 - panorama | 4 - vila | 5 - pedra | 6 - palácio | 7 - horto</p>
+      <div class="gallery">
+        <figure><img src="assets/portal.jpg" alt="Panorama / Portal — 1080x675"><figcaption>Panorama / Portal de entrada</figcaption></figure>
+        <figure><img src="assets/vila-capivari.jpg" alt="Vila Capivari — 1200x800"><figcaption>Vila Capivari</figcaption></figure>
+        <figure><img src="assets/pedra_bau.png" alt="Pedra do Baú — 800x600"><figcaption>Pedra do Baú</figcaption></figure>
+        <figure><img src="assets/palacio.png" alt="Palácio Boa Vista — 1200x800"><figcaption>Palácio Boa Vista</figcaption></figure>
+        <figure><img src="assets/horto.png" alt="Horto Florestal — 1200x800"><figcaption>Horto / área verde (ilustrativa)</figcaption></figure>
+      </div>
+    </section>
+
+    <footer>
+      <div style="max-width:var(--max-width);margin:0 auto;padding:12px var(--gutter);">
+        <div style="color:var(--white);font-weight:600">Créditos</div>
+        <div style="margin-top:6px;color:var(--accent-gray)">Pedro, Henrique A., Victor Rosa, Santiago e Nicolas</div>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>
